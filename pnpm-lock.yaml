@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@vee-validate/rules':
+        specifier: ^4.12.8
+        version: 4.12.8(vue@3.4.27)
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.38)
@@ -20,6 +23,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.3
         version: 3.4.3
+      vee-validate:
+        specifier: ^4.12.8
+        version: 4.12.8(vue@3.4.27)
       vue:
         specifier: ^3.4.21
         version: 3.4.27
@@ -425,6 +431,9 @@ packages:
 
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
+
+  '@vee-validate/rules@4.12.8':
+    resolution: {integrity: sha512-RisPzo+jGt0B0QTVhyZK5Pxb0Q6TESnS2rbR+CE3HRtJ+z0q5rkqkSIwvKrTKJFZpowJIoAHYS02jm5Pty5C3Q==}
 
   '@vitejs/plugin-vue@5.0.4':
     resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
@@ -1741,6 +1750,10 @@ packages:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
     engines: {node: '>=10'}
 
+  type-fest@4.18.3:
+    resolution: {integrity: sha512-Q08/0IrpvM+NMY9PA2rti9Jb+JejTddwmwmVQGskAlhtcrw1wsRzoR6ode6mR+OAabNa75w/dxedSUY2mlphaQ==}
+    engines: {node: '>=16'}
+
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
@@ -1774,6 +1787,11 @@ packages:
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
+
+  vee-validate@4.12.8:
+    resolution: {integrity: sha512-A07rm3+y7SRk0CMD/O4nBT0nxtwjyfzGZwjEUDk18SxK0ZMzd4AFCzzdHlIiCE1QgHetxd0I3kVkZdN0GG0Oww==}
+    peerDependencies:
+      vue: ^3.4.26
 
   verror@1.10.0:
     resolution: {integrity: sha512-ZZKSmDAEFOijERBLkmYfJ+vmk3w+7hOLYDNkRCuRuMJGEmqYNCNLyBBFwWKVMhfwaEF3WOd0Zlw86U/WC/+nYw==}
@@ -2159,6 +2177,12 @@ snapshots:
     optional: true
 
   '@ungap/structured-clone@1.2.0': {}
+
+  '@vee-validate/rules@4.12.8(vue@3.4.27)':
+    dependencies:
+      vee-validate: 4.12.8(vue@3.4.27)
+    transitivePeerDependencies:
+      - vue
 
   '@vitejs/plugin-vue@5.0.4(vite@5.2.12(@types/node@20.12.13))(vue@3.4.27)':
     dependencies:
@@ -3561,6 +3585,8 @@ snapshots:
 
   type-fest@0.21.3: {}
 
+  type-fest@4.18.3: {}
+
   undici-types@5.26.5:
     optional: true
 
@@ -3588,6 +3614,12 @@ snapshots:
   util-deprecate@1.0.2: {}
 
   uuid@8.3.2: {}
+
+  vee-validate@4.12.8(vue@3.4.27):
+    dependencies:
+      '@vue/devtools-api': 6.6.1
+      type-fest: 4.18.3
+      vue: 3.4.27
 
   verror@1.10.0:
     dependencies:
