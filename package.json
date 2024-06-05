@@ -16,24 +16,29 @@
   },
   "dependencies": {
     "@vee-validate/rules": "^4.12.8",
-    "autoprefixer": "^10.4.19",
     "pinia": "^2.1.7",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3",
-    "vee-validate": "^4.12.8",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vee-validate": "^4.13.0",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.8.0",
-    "@vitejs/plugin-vue": "^5.0.4",
+    "@rushstack/eslint-patch": "^1.10.3",
+    "@vitejs/plugin-vue": "^5.0.5",
     "@vue/eslint-config-prettier": "^9.0.0",
-    "cypress": "^13.7.2",
+    "autoprefixer": "^10.4.19",
+    "cypress": "^13.10.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-cypress": "^2.15.1",
-    "eslint-plugin-vue": "^9.23.0",
-    "prettier": "^3.2.5",
+    "eslint-plugin-cypress": "^2.15.2",
+    "eslint-plugin-vue": "^9.26.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.3.0",
     "start-server-and-test": "^2.0.3",
-    "vite": "^5.2.8"
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.12"
+  },
+  "resolutions": {
+    "glob": "^7.2.3",
+    "inflight": "^1.0.6",
+    "rimraf": "^3.0.2"
   }
 }

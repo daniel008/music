@@ -1,8 +1,9 @@
+import { createPinia } from 'pinia'
+import { createApp } from 'vue'
+
 import './assets/base.css'
 import './assets/main.css'
 
-import { createPinia } from 'pinia'
-import { createApp } from 'vue'
 import VeeValidatePlugin from './includes/validation'
 
 import App from './App.vue'
