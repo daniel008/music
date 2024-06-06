@@ -3,6 +3,7 @@ import { createApp } from 'vue'
 
 import './assets/base.css'
 import './assets/main.css'
+import './includes/firebase'
 
 import VeeValidatePlugin from './includes/validation'
 
